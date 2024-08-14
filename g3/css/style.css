@@ -145,14 +145,57 @@ margin-top: 6rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    margin-top: 1.8rem;
+    margin-top: 1.8rem 0;
 }
 
 .sponsor-companies img{
 filter: grayscale(100%);
 }
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding: 1rem;
+}
+.feature-section-description {
+    margin: 1rem;
+ width: 50%;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.features{
+    width: 1100px;
+    margin: 4rem auto;
+    display: flex;
+    gap: 100px;
+
+}
+#experience-badge{
+    padding: 20px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -50px;
+    margin-top: -60px;
+}
+#experience-year{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.featured-architect img{
+    width: 100%;
+}
 @media screen and (max-width:576px){
-    .navbar,.nav-links,.teams{
+    .navbar,.nav-links,.teams,.features{
       flex-direction: column;
     }
     .team-img-container,.facts-container,.sponsor-companies{
@@ -166,6 +209,10 @@ filter: grayscale(100%);
         margin-left: 2.5rem;
         margin-top: 2rem;
         width: 300px;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     
 }
